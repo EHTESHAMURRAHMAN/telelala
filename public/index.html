@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" />
   <title>Telegram Mini App Login</title>
@@ -18,19 +19,20 @@
       throw new Error("Not inside Telegram");
     }
 
-    fetch("https://teligramloginbackend-six.vercel.app/auth/telegram/callback", {
+    fetch("https://telelala.vercel.app/auth/telegram/callback", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         initData: tg.initData
       })
     })
-    .then(res => res.text())
-    .then(html => {
-      document.open();
-      document.write(html);
-      document.close();
-    });
+      .then(res => res.text())
+      .then(html => {
+        document.open();
+        document.write(html);
+        document.close();
+      });
   </script>
 </body>
+
 </html>

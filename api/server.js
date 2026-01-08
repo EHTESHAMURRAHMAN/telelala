@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://teligramloginbackend-six.vercel.app", 
+  origin: "https://telelala.vercel.app",
   methods: ["POST", "GET", "OPTIONS"],
   credentials: true
 }));
